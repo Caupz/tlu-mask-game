@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 862726206}
   m_Layer: 5
   m_Name: Fordon_Char
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,6 +561,9 @@ MonoBehaviour:
   crosshairs: {fileID: 1901045448}
   gun: {fileID: 1873825409}
   player: {fileID: 862726206}
+  bulletPrefab: {fileID: 2438978476876672589, guid: 0a618f242a1e20f41a88fa294e2bbdd1,
+    type: 3}
+  bulletSpeed: 10
 --- !u!1 &1593355530
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,6 +780,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.22728157, y: 4.83}
   m_EdgeRadius: 0
+--- !u!1 &1623980112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623980114}
+  - component: {fileID: 1623980113}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1623980113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623980112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc18fbddb8ac60a42ae267fae221b508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 786641480420568797, guid: 7a9194fbea4a1bf45b07a5a994428429, type: 3}
+  spawnRate: 2
+--- !u!4 &1623980114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623980112}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.36, y: 2.96, z: -123.87239}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1873825409
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,7 +982,7 @@ Transform:
   m_GameObject: {fileID: 1901045448}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4

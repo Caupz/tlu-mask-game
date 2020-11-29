@@ -8,6 +8,8 @@ public class PointAndShoot : MonoBehaviour
     public GameObject gun;
     private Vector3 target;
     public Fordon_move player;
+    public GameObject bulletPrefab;
+    public float bulletSpeed = 30.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -30,5 +32,21 @@ public class PointAndShoot : MonoBehaviour
         }
 
         gun.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            float distance = difference.magnitude;
+            Vector2 direction = difference / distance;
+            direction.Normalize();
+            FireBullet(direction, rotationZ);
+        }
+    }
+
+    void FireBullet(Vector2 direction, float rotationZ)
+    {
+        GameObject b = Instantiate(bulletPrefab) as GameObject;
+        b.transform.position = gun.transform.position;
+        b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+        b.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
     }
 }
