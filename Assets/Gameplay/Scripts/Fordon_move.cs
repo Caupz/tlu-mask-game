@@ -15,7 +15,7 @@ public class Fordon_move : MonoBehaviour {
 	public float decreaseSpeed;
 	public float sprintSpeed;
 
-	private bool facingRight = true;
+	public bool facingRight = true;
 	
 	void Start ()
 	{

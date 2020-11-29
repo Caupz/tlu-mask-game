@@ -7,6 +7,7 @@ public class PointAndShoot : MonoBehaviour
     public GameObject crosshairs;
     public GameObject gun;
     private Vector3 target;
+    public Fordon_move player;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,12 @@ public class PointAndShoot : MonoBehaviour
 
         Vector3 difference = target - gun.transform.position;
         float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+
+        if (!player.facingRight)
+        {
+            rotationZ += 180f;
+        }
+
         gun.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
     }
 }
