@@ -44,6 +44,7 @@ public class PointAndShoot : MonoBehaviour
 
     void FireBullet(Vector2 direction, float rotationZ)
     {
+        SoundManagerScript.PlaySound("fire");
         GameObject b = Instantiate(bulletPrefab) as GameObject;
         b.transform.position = gun.transform.position;
         b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);

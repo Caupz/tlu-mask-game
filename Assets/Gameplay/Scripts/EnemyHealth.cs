@@ -18,10 +18,12 @@ public class EnemyHealth : MonoBehaviour
     public void TakeHit(float damage)
     {
         hp -= damage;
+        SoundManagerScript.PlaySound("charHit");
 
         if (hp <= 0)
         {
             Destroy(gameObject);
+            SoundManagerScript.PlaySound("enemyDeath");
         }
         healthBar.SetHealth(hp, maxhp);
     }
