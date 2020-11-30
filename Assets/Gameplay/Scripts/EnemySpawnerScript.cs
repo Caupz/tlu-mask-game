@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class EnemySpawnerScript : MonoBehaviour
 {
-    public GameObject enemy;
+    public GameObject[] enemies;
     float randomX;
     Vector2 spawnPos;
     public float spawnRate = 2f;
     float nextSpawn = 0f;
+    int randomIdx = 0;
      
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,14 @@ public class EnemySpawnerScript : MonoBehaviour
             nextSpawn = Time.time + spawnRate;
             randomX = Random.Range(-1f, 1f);
             spawnPos = new Vector2(randomX, transform.position.y);
-            Instantiate(enemy, spawnPos, Quaternion.identity);
+
+            Instantiate(PickRandomEnemy(), spawnPos, Quaternion.identity);
         }
+    }
+
+    GameObject PickRandomEnemy()
+    {
+        randomIdx = Random.Range(0, enemies.Length);
+        return enemies[randomIdx];
     }
 }
