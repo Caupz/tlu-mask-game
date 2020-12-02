@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3250f0d0f73db74b985075056400ce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1.5
   target: {fileID: 0}
   stoppingDist: 1
 --- !u!114 &4925815085102753882
@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f972d9809cb1546b0f4713db897d5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 5
-  maxhp: 5
+  hp: 8
+  maxhp: 8
   healthBar: {fileID: 4925815084500651479}
 --- !u!61 &5274632068273563300
 BoxCollider2D:

@@ -98,9 +98,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1.25
+  m_Mass: 0.5
   m_LinearDrag: 0.3
-  m_AngularDrag: 0.25
+  m_AngularDrag: 0.3
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3250f0d0f73db74b985075056400ce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 6
   target: {fileID: 0}
   stoppingDist: 1
 --- !u!114 &6729573121005782228
@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f972d9809cb1546b0f4713db897d5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 4
-  maxhp: 4
+  hp: 2
+  maxhp: 2
   healthBar: {fileID: 6729573120538206553}
 --- !u!61 &5767840409091443242
 BoxCollider2D:
