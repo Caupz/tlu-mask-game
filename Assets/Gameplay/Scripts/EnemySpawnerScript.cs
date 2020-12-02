@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawnerScript : MonoBehaviour
 {
@@ -10,11 +11,14 @@ public class EnemySpawnerScript : MonoBehaviour
     public float spawnRate = 2f;
     float nextSpawn = 0f;
     int randomIdx = 0;
+    float selfX = 0f;
+    public bool infiniteAmount = true;
+    public int enemyCount = 10;
      
     // Start is called before the first frame update
     void Start()
     {
-        
+        selfX = gameObject.transform.position.x;
     }
 
     // Update is called once per frame
@@ -22,9 +26,20 @@ public class EnemySpawnerScript : MonoBehaviour
     {
         if(Time.time > nextSpawn)
         {
+            if(!infiniteAmount)
+            {
+                enemyCount--;
+
+                if(enemyCount <= 0)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                    Destroy(gameObject);
+                }
+            }
+
             nextSpawn = Time.time + spawnRate;
             randomX = Random.Range(-1f, 1f);
-            spawnPos = new Vector2(randomX, transform.position.y);
+            spawnPos = new Vector2(randomX + selfX, transform.position.y);
 
             Instantiate(PickRandomEnemy(), spawnPos, Quaternion.identity);
         }
