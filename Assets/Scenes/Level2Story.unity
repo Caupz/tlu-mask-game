@@ -156,7 +156,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.8}
-  m_SizeDelta: {x: 612.99744, y: 312.90643}
+  m_SizeDelta: {x: 612.99744, y: 400.55298}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &522126131
 MonoBehaviour:
@@ -190,7 +190,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: 
+  m_Text: "When Fordon arrived home after neutralizing the protest not even a minute
+    later his bestfriend Dr. Oetker bashed through the door. \n\nDoctor informed
+    him that there is going to be a -75% off discount sale at sportsland. He also
+    told Fordon that there will be unforetoldable strong resistance in the end with
+    if he even reaches that far...\n\nBefore leaving Dr. Oetker upgraded Fordon's
+    cannon with a solution he found while wandering in the deep web. He also added
+    that it was hard to acquire because he had to use some legacy software called
+    Kazaa."
 --- !u!222 &522126132
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -235,7 +242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.8, y: -140.65}
+  m_AnchoredPosition: {x: 197.32, y: -184.48}
   m_SizeDelta: {x: 218.3656, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &869703905
@@ -790,7 +797,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: START PLAYING >
+  m_text: NEXT LEVEL >
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
