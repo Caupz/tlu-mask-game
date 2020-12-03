@@ -14,11 +14,14 @@ public class EnemySpawnerScript : MonoBehaviour
     float selfX = 0f;
     public bool infiniteAmount = true;
     public int enemyCount = 10;
+    public int delayFirstSpawn = 0;
+    Transform fordon;
      
     // Start is called before the first frame update
     void Start()
     {
         selfX = gameObject.transform.position.x;
+        fordon = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     void GoToNextScene()
@@ -27,9 +30,21 @@ public class EnemySpawnerScript : MonoBehaviour
         Destroy(gameObject);
     }
 
+    float previouseSecond = 0;
     // Update is called once per frame
     void Update()
     {
+        if(delayFirstSpawn > 0 && Time.time > previouseSecond)
+        {
+            previouseSecond = Time.time;
+            return;
+        }
+
+        if(Vector2.Distance(fordon.position, transform.position) < 15)
+        {
+            return;
+        }
+
         if(Time.time > nextSpawn)
         {
             nextSpawn = Time.time + spawnRate;
