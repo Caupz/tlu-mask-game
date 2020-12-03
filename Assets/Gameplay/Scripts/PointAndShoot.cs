@@ -46,6 +46,7 @@ public class PointAndShoot : MonoBehaviour
     {
         SoundManagerScript.PlaySound("fire");
         GameObject b = Instantiate(bulletPrefab) as GameObject;
+        Physics2D.IgnoreCollision(b.GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
         b.transform.position = gun.transform.position;
         b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         b.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;

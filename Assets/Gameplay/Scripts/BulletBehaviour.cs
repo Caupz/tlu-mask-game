@@ -12,6 +12,9 @@ public class BulletBehaviour : MonoBehaviour
             enemy.TakeHit(1f);
         }
 
-        Destroy(gameObject);
+        if(collision.gameObject.tag != "Player")
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -62,7 +62,7 @@ public class Fordon_move : MonoBehaviour {
 
 		body.velocity = new Vector2(horizontal * walkSpeed, vertical * walkSpeed);
 	}
-	
+    
 	void Flip()
     {
         facingRight = !facingRight;
@@ -70,5 +70,13 @@ public class Fordon_move : MonoBehaviour {
         Scaler.x *= -1;
         transform.localScale = Scaler;
 
+    }
+
+    void OnCollisionEnter2D(Collision collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        }
     }
 }
