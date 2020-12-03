@@ -211,6 +211,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 2113901657}
+  - {fileID: 1589993826}
+  - {fileID: 376833034}
+  - {fileID: 1355565998}
   - {fileID: 1255097524}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -252,7 +256,7 @@ RectTransform:
   m_Children:
   - {fileID: 1105969744}
   m_Father: {fileID: 1255097524}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -360,7 +364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376833034}
   - component: {fileID: 376833035}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FordonSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,11 +379,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376833033}
   m_LocalRotation: {x: -0, y: -0, z: 0.00045774342, w: 0.99999994}
-  m_LocalPosition: {x: -339.59998, y: 1.1999816, z: -1246.4847}
-  m_LocalScale: {x: 22.663364, y: 22.663364, z: 1.1331681}
+  m_LocalPosition: {x: -339.60004, y: 1.199999, z: -7.7}
+  m_LocalScale: {x: 22.663368, y: 22.663368, z: 1.1331682}
   m_Children: []
-  m_Father: {fileID: 1255097524}
-  m_RootOrder: 5
+  m_Father: {fileID: 166314434}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.052}
 --- !u!212 &376833035
 SpriteRenderer:
@@ -461,7 +465,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1255097524}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -541,7 +545,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1255097524}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -686,7 +690,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1255097524}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -898,7 +902,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1255097524}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -975,18 +979,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2113901657}
-  - {fileID: 1589993826}
   - {fileID: 1733190671}
   - {fileID: 1250004347}
   - {fileID: 548839884}
-  - {fileID: 376833034}
   - {fileID: 425629549}
   - {fileID: 324135328}
   - {fileID: 1002740203}
-  - {fileID: 1355565998}
   m_Father: {fileID: 166314434}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1015,7 +1015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1355565998}
   - component: {fileID: 1355565999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: President1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1030,11 +1030,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355565997}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 352.9018, y: -75.7, z: -1246.4851}
-  m_LocalScale: {x: 22, y: 22, z: 1.1331681}
+  m_LocalPosition: {x: 352.90176, y: -75.69999, z: -54}
+  m_LocalScale: {x: 22, y: 22, z: 1.1331682}
   m_Children: []
-  m_Father: {fileID: 1255097524}
-  m_RootOrder: 9
+  m_Father: {fileID: 166314434}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1355565999
 SpriteRenderer:
@@ -1096,7 +1096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1589993826}
   - component: {fileID: 1589993827}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: President1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1111,10 +1111,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589993825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 352.9018, y: 108.2, z: -1246.4851}
-  m_LocalScale: {x: 22, y: 22, z: 1.1331681}
+  m_LocalPosition: {x: 352.90176, y: 108.20001, z: -38}
+  m_LocalScale: {x: 22, y: 22, z: 1.1331682}
   m_Children: []
-  m_Father: {fileID: 1255097524}
+  m_Father: {fileID: 166314434}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1589993827
@@ -1280,7 +1280,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1255097524}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1334,7 +1334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2113901657}
   - component: {fileID: 2113901658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FordonSprite1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1349,10 +1349,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113901656}
   m_LocalRotation: {x: -0, y: -0, z: 0.00045774342, w: 0.99999994}
-  m_LocalPosition: {x: -339.59998, y: 183.70001, z: -1246.4847}
-  m_LocalScale: {x: 22.663364, y: 22.663364, z: 1.1331681}
+  m_LocalPosition: {x: -339.60004, y: 183.70006, z: -44}
+  m_LocalScale: {x: 22.663368, y: 22.663368, z: 1.1331682}
   m_Children: []
-  m_Father: {fileID: 1255097524}
+  m_Father: {fileID: 166314434}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.052}
 --- !u!212 &2113901658

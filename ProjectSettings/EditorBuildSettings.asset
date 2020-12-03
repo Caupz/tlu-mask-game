@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2BossDialogStory.unity
     guid: bc388a044c8acc44896408bf81e64ac6
+  - enabled: 1
+    path: Assets/Scenes/Level2_BOSS_BATTLE.unity
+    guid: 165166fa8c7c2754dbbb8044d9715903
   m_configObjects: {}
