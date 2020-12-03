@@ -36,6 +36,7 @@ public class EnemySpawnerScript : MonoBehaviour
     {
         if(delayFirstSpawn > 0 && Time.time > previouseSecond)
         {
+            delayFirstSpawn--;
             previouseSecond = Time.time;
             return;
         }
