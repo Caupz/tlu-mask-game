@@ -97,9 +97,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0.2
-  m_AngularDrag: 0.2
-  m_GravityScale: 0.1
+  m_LinearDrag: 7
+  m_AngularDrag: 7
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c95e057561d0849a20f3cee84ea6e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 5727386404247237611, guid: 60acebeea3231784da492a724eae56a3, type: 3}
 --- !u!61 &1642204250568158490
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -4,6 +4,24 @@ using UnityEngine;
 
 public class BulletBehaviour : MonoBehaviour
 {
+    public Fordon_move player;
+    float timeOfDeath;
+
+    void Start()
+    {
+        timeOfDeath = Time.time + 1f;
+    }
+
+    void Update()
+    {
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
+
+        if(Time.time > timeOfDeath)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         var enemys = collision.collider.GetComponents<EnemyHealth>();
