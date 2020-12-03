@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4925815085102753882}
   - component: {fileID: 5274632068273563300}
   m_Layer: 5
-  m_Name: boomer 1 1 1 1
+  m_Name: EnemyBoomer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
