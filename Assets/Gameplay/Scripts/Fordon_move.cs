@@ -69,14 +69,5 @@ public class Fordon_move : MonoBehaviour {
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
-
-    }
-
-    void OnCollisionEnter2D(Collision collision)
-    {
-        if (collision.gameObject.tag == "Bullet")
-        {
-            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-        }
     }
 }
