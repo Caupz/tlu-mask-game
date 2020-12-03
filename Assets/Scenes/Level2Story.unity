@@ -193,11 +193,10 @@ MonoBehaviour:
   m_Text: "When Fordon arrived home after neutralizing the protest not even a minute
     later his bestfriend Dr. Oetker bashed through the door. \n\nDoctor informed
     him that there is going to be a -75% off discount sale at sportsland. He also
-    told Fordon that there will be unforetoldable strong resistance in the end with
-    if he even reaches that far...\n\nBefore leaving Dr. Oetker upgraded Fordon's
-    cannon with a solution he found while wandering in the deep web. He also added
-    that it was hard to acquire because he had to use some legacy software called
-    Kazaa."
+    told Fordon that there will be unforetoldable strong resistance in the end if
+    he even reaches that far...\n\nBefore leaving Dr. Oetker upgraded Fordon's cannon
+    with a solution he found while wandering in the deep web. He also added that
+    it was hard to acquire because he had to use some legacy software called Kazaa."
 --- !u!222 &522126132
 CanvasRenderer:
   m_ObjectHideFlags: 0
