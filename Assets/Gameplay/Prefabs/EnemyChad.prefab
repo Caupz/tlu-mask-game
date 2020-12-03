@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 4444061994302609072}
   m_Layer: 5
   m_Name: EnemyChad
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
