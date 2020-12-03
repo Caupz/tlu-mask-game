@@ -177,7 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next level >
+  m_text: START PLAYING >
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -323,18 +323,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: 'While shooting masks to the last few anti-maskers Fordon''s mask-cannon
-    fell apart. He knew that he is in need for a new weapon. Fordon opened Netscape
-    Navigator webbrowser and downloaded some better schematics from piratebay and
-    ordered more masks from Aliexpress with fastest transport option.
+  m_Text: 'Fordon saw how the society is going haywire and he knew that something
+    must be done! Fordon knew that he is in need for a new weapon. He opened Netscape
+    Navigator webbrowser and downloaded potato-gun schematics from the piratebay,
+    he also ordered masks from Aliexpress with fastest transport option.
 
 
-    * Few
-    months and order disputes later *
+    *
+    Few months and order disputes later *
 
 
-    Fordon 3d printed himself a new cannon
-    which he''s fingers itched to test out on plaque spreaders.'
+    Fordon 3d printed himself a mask-cannon
+    which he''s fingers itched to test out on plague spreaders.'
 --- !u!222 &128541786
 CanvasRenderer:
   m_ObjectHideFlags: 0

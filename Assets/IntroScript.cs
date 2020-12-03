@@ -7,7 +7,6 @@ public class IntroScript : MonoBehaviour
 {
     public void StartPlaying()
     {
-        SceneManager.LoadScene("Level1");
-        Cursor.visible = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
