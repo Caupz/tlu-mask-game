@@ -32,4 +32,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2_BOSS_BATTLE.unity
     guid: 165166fa8c7c2754dbbb8044d9715903
+  - enabled: 1
+    path: Assets/Scenes/Level2AfterBossStory.unity
+    guid: 2518366eeaf5b484086c0d3072507fb5
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: b947b8cbd5ea94042bb46131fdd70c61
+  - enabled: 1
+    path: Assets/Scenes/Level3PreBossStory.unity
+    guid: 88e4142d8ee9538409a2dd4b929f9f04
+  - enabled: 1
+    path: Assets/Scenes/Level3_BOSS_BATTLE.unity
+    guid: 9743c7ece501fe34f97b499aad23290c
+  - enabled: 1
+    path: Assets/Scenes/Level3AfterBossStory.unity
+    guid: 90608ccd6fd54bf47a26fc9e3fddaa40
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 924e8a245afe2d44c84d10ebc1a04c69
   m_configObjects: {}
