@@ -102,8 +102,12 @@ MonoBehaviour:
   bulletSpeed: 20
   burstFire: 0
   projectileRate: 3
+  burstCount: 3
   bulletPrefab: {fileID: 2368296026633050748, guid: 6f66fd2e87b824945b76ea23b239e00a,
     type: 3}
+  burstFireRate: 0.2
+  randomX: 0
+  randomY: 0
 --- !u!50 &4584738670923428790
 Rigidbody2D:
   serializedVersion: 4
@@ -141,6 +145,9 @@ MonoBehaviour:
   target: {fileID: 0}
   stoppingDist: 1
   isFacingRight: 0
+  canJump: 0
+  jumpRate: 0
+  ZigZagChangingInterval: 3
 --- !u!114 &8148972693134406958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +163,7 @@ MonoBehaviour:
   hp: 100
   maxhp: 100
   healthBar: {fileID: 8148972692796674211}
+  goToNextSceneOnDeath: 0
 --- !u!61 &8969398246643956688
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -216,7 +224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 120}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8148972692067799641
@@ -567,6 +575,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
+  m_AnchoredPosition: {x: -5, y: 120}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

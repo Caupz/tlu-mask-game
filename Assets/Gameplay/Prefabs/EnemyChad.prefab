@@ -33,7 +33,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
+  m_AnchoredPosition: {x: -5, y: 120}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3513715378865387097
@@ -274,7 +274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 120}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3513715379368017721
@@ -511,6 +511,10 @@ MonoBehaviour:
   speed: 4
   target: {fileID: 0}
   stoppingDist: 1
+  isFacingRight: 0
+  canJump: 0
+  jumpRate: 0
+  ZigZagChangingInterval: 3
 --- !u!114 &3513715378287253582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,6 +530,7 @@ MonoBehaviour:
   hp: 7
   maxhp: 7
   healthBar: {fileID: 3513715378888965571}
+  goToNextSceneOnDeath: 0
 --- !u!61 &4444061994302609072
 BoxCollider2D:
   m_ObjectHideFlags: 0
