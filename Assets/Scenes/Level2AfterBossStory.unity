@@ -188,12 +188,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoryPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 7205587710656023274, guid: 66101b5ab1cc6a04da3679258d548317,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -6.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205587710656023274, guid: 66101b5ab1cc6a04da3679258d548317,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 625.2477
+      objectReference: {fileID: 0}
     - target: {fileID: 7205587710656023275, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
       propertyPath: m_Text
-      value: "Mr. President: Yes thank you, Fordon. Unfortunatly I was mindcontrolled
-        by the alien. It  \nbreaked out from the area 51 and is  \ntrying to get
-        back to it's spaceship!"
+      value: 'Mr. President: Yes thank you, Fordon. Unfortunatly I was mindcontrolled
+        by the alien. It broke out from the area 69 and is trying to get to it''s
+        spaceship! Before you leave, take this burst-fire module for your weapon.'
       objectReference: {fileID: 0}
     - target: {fileID: 7205587710959120621, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
