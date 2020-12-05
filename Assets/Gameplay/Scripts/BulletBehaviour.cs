@@ -5,19 +5,22 @@ using UnityEngine;
 public class BulletBehaviour : MonoBehaviour
 {
     float timeOfDeath;
-    Collider2D collideComponent;
+    Collider2D[] collideComponents;
     Collider2D playerCollision;
 
     void Start()
     {
         timeOfDeath = Time.time + 1f;
-        collideComponent = gameObject.GetComponent<Collider2D>();
+        collideComponents = gameObject.GetComponents<Collider2D>();
         playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
     }
 
     void Update()
     {
-        Physics2D.IgnoreCollision(collideComponent, playerCollision);
+        foreach(Collider2D collideComponent in collideComponents)
+        {
+            Physics2D.IgnoreCollision(collideComponent, playerCollision);
+        }
 
         if(Time.time > timeOfDeath)
         {
