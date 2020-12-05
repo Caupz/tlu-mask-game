@@ -50,5 +50,6 @@ MonoBehaviour:
   - {fileID: 1428357842012750419, guid: a4c37d4449da6a547ac17a2cd6e8c2f2, type: 3}
   - {fileID: 9152065504327910578, guid: ce49642fd9cc3324d8b7b87f3f8fb432, type: 3}
   spawnRate: 2
-  infiniteAmount: 1
+  infiniteAmount: 0
   enemyCount: 10
+  delayFirstSpawn: 0

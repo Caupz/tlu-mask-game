@@ -133,12 +133,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a10d7d7fc173ce4a819031faabe0380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crosshairs: {fileID: 0}
+  crosshairs: {fileID: 7738912435509482202, guid: ef0b9b05bf358a14c826f6cd16f776f3,
+    type: 3}
   gun: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 5727386404247237611, guid: 60acebeea3231784da492a724eae56a3, type: 3}
   bulletPrefab: {fileID: 2438978476876672589, guid: 0a618f242a1e20f41a88fa294e2bbdd1,
     type: 3}
   bulletSpeed: 10
+  inAccurate: 0
 --- !u!82 &40658432144596687
 AudioSource:
   m_ObjectHideFlags: 0
