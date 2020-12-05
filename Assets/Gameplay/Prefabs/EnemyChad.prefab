@@ -402,6 +402,7 @@ GameObject:
   - component: {fileID: 9112345001318342357}
   - component: {fileID: 3513715378287253582}
   - component: {fileID: 4444061994302609072}
+  - component: {fileID: 6676472248075355071}
   m_Layer: 5
   m_Name: EnemyChad
   m_TagString: Enemy
@@ -551,3 +552,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!95 &6676472248075355071
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9112345001318342345}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 062b6cbe162c26b448c65f4d3ecb310f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
