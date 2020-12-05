@@ -121,12 +121,10 @@ public class EnemyFollow : MonoBehaviour
 
                 if (moveUp)
                 {
-                    Debug.Log("MOVED UP");
                     targetPos.y += 100.0f;
                 }
                 else
                 {
-                    Debug.Log("MOVED DOWN");
                     targetPos.y -= 100.0f;
                 }
             }
