@@ -83,21 +83,11 @@ public class PointAndShoot : MonoBehaviour
             float distance = bulletDifference.magnitude;
             Vector2 direction = bulletDifference / distance;
             direction.Normalize();
-            SetCursorTo(bullettarget);
             crosshairs.transform.position = new Vector2(bullettarget.x, bullettarget.y);
             gun.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZBullet);
             FireBullet(direction, rotationZBullet);
         }
     }
-
-    void SetCursorTo(Vector3 pos)
-    {
-        Vector3 tmpScreenPos = Camera.main.WorldToScreenPoint(pos);
-        SetCursorPos((int)tmpScreenPos.x, Screen.height - (int)tmpScreenPos.y);
-    }
-
-    [DllImport("user32.dll")]
-    public static extern bool SetCursorPos(int X, int Y);
 
     void FireBullet(Vector2 direction, float rotationZ)
     {
