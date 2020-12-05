@@ -154,6 +154,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7435829476704907038, guid: cfbb2ab859b5ed840a5671c093d87aca,
         type: 3}
+    - target: {fileID: 40658432144596680, guid: 258c663e9474941469255b6400c6e7d3,
+        type: 3}
+      propertyPath: bulletSpeed
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 40658432144596682, guid: 258c663e9474941469255b6400c6e7d3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1129,6 +1134,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755551314521497098, guid: 7ea5a22261431994493d2dd6a15bf233,
+        type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755551314521497098, guid: 7ea5a22261431994493d2dd6a15bf233,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755551314521497098, guid: 7ea5a22261431994493d2dd6a15bf233,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7755551314521497109, guid: 7ea5a22261431994493d2dd6a15bf233,
         type: 3}
