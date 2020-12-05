@@ -655,6 +655,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8148972693134406958, guid: 199a75361de07794ab101e8c7636d0de,
+        type: 3}
+      propertyPath: goToNextSceneOnDeath
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 199a75361de07794ab101e8c7636d0de, type: 3}
 --- !u!1001 &1469526655
