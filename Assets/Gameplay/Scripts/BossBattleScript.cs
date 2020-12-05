@@ -9,6 +9,7 @@ public class BossBattleScript : MonoBehaviour
     public float projectileRate = 3f;
     public float burstCount = 3;
     public GameObject bulletPrefab;
+    public float burstFireRate = 0.2f;
 
     float burstCountLeft = 0;
     float nextProjectile = 0;
@@ -36,7 +37,7 @@ public class BossBattleScript : MonoBehaviour
         {
             if(burstFire)
             {
-                previousSecond = Time.time + 0.2f;
+                previousSecond = Time.time + burstFireRate;
                 nextProjectile = 0;
                 burstCountLeft--;
 
