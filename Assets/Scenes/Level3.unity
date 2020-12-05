@@ -181,6 +181,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 183184672356506624, guid: 270dd688ba93b8843a44cb5119a8f35c,
         type: 3}
+    - target: {fileID: 9013693438383178310, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: burstfire
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013693438383178310, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: burstFireRate
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 9045304807895009797, guid: b350546d6b82c3447b551c13dde976ff,
         type: 3}
       propertyPath: m_Name

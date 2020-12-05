@@ -12,7 +12,12 @@ public class PointAndShoot : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 30.0f;
     public bool inAccurate = false;
+    public bool burstfire = false;
+    public int burstFireCount = 3;
+    public float burstFireRate = 0.25f;
 
+    float burstFireNext = 0.25f;
+    int burstFireCountLeft = 0;
     float randomX;
     float randomY;
 
@@ -78,7 +83,7 @@ public class PointAndShoot : MonoBehaviour
 
         gun.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
 
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) || (burstfire && burstFireCountLeft > 0 && Time.time > burstFireNext))
         {
             float distance = bulletDifference.magnitude;
             Vector2 direction = bulletDifference / distance;
@@ -86,6 +91,20 @@ public class PointAndShoot : MonoBehaviour
             crosshairs.transform.position = new Vector2(bullettarget.x, bullettarget.y);
             gun.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZBullet);
             FireBullet(direction, rotationZBullet);
+
+            if(burstfire)
+            {
+                if(burstFireCountLeft == 0)
+                {
+                    burstFireCountLeft = burstFireCount - 1;
+                }
+                else
+                {
+                    burstFireCountLeft--;
+                }
+
+                burstFireNext = Time.time + burstFireRate;
+            }
         }
     }
 
