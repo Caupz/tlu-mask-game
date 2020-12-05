@@ -730,7 +730,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
   m_Text: "Mr. President: You see, in this world there's two kinds\nof people, my
-    friend: Those with loaded\n guns and those who dig. You dig."
+    friend. Those with loaded\n guns and those who dig. You dig."
 --- !u!222 &1002740205
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -988,10 +988,10 @@ RectTransform:
   m_Father: {fileID: 166314434}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000045776, y: 0.000015259}
-  m_SizeDelta: {x: 948.0001, y: 533}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1255097525
 MonoBehaviour:

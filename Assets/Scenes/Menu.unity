@@ -373,8 +373,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 326.7354, y: 374.879}
+  m_AnchoredPosition: {x: 0, y: -24.08}
+  m_SizeDelta: {x: 326.7354, y: 492.8395}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &36567631
 MonoBehaviour:
@@ -564,7 +564,7 @@ RectTransform:
   m_GameObject: {fileID: 383523848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1157249237}
   m_Father: {fileID: 36567630}
@@ -572,7 +572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000002861, y: -123.9}
+  m_AnchoredPosition: {x: -0.000002861, y: -155.7}
   m_SizeDelta: {x: 179.51556, y: 85.278366}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &383523850
@@ -991,7 +991,7 @@ RectTransform:
   m_GameObject: {fileID: 651551733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1697098388}
   m_Father: {fileID: 36567630}
@@ -1200,8 +1200,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 47}
-  m_SizeDelta: {x: -167.09631, y: 482.81506}
+  m_AnchoredPosition: {x: 0, y: 70.4012}
+  m_SizeDelta: {x: -167.09631, y: 529.61755}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &790805723
 MonoBehaviour:
@@ -1412,7 +1412,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015221, y: 15.648}
+  m_AnchoredPosition: {x: -0.000015221, y: 62.01}
   m_SizeDelta: {x: 444.14148, y: 343.58203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &907021371
