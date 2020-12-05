@@ -7,17 +7,22 @@ public class BossBattleScript : MonoBehaviour
     public float bulletSpeed = 20f;
     public bool burstFire = false;
     public float projectileRate = 3f;
+    public float burstCount = 3;
     public GameObject bulletPrefab;
 
+    float burstCountLeft = 0;
     float nextProjectile = 0;
     float previousSecond = 0;
     EnemyFollow enemyFollow;
     Vector3 target;
     GameObject player;
     Collider2D playerCollision;
-    
+    public float randomX;
+    public float randomY;
+
     void Start()
     {
+        burstCountLeft = burstCount;
         nextProjectile = projectileRate;
         previousSecond = Time.time + 1;
         enemyFollow = gameObject.GetComponent<EnemyFollow>();
@@ -29,12 +34,58 @@ public class BossBattleScript : MonoBehaviour
     {
         if(Time.time > previousSecond)
         {
-            nextProjectile--;
-            previousSecond = Time.time + 1;
+            if(burstFire)
+            {
+                previousSecond = Time.time + 0.2f;
+                nextProjectile = 0;
+                burstCountLeft--;
+
+                if(burstCountLeft <= 0)
+                {
+                    burstCountLeft = burstCount;
+                    previousSecond = Time.time + 1;
+                }
+            }
+            else
+            {
+                nextProjectile--;
+                previousSecond = Time.time + 1;
+            }
 
             if(nextProjectile <= 0)
             {
                 target = playerCollision.transform.position;
+                randomX = Random.Range(0f, 1.5f);
+                randomY = Random.Range(0f, 1.5f);
+                int randomOption = Random.Range(0, 4);
+
+                switch(randomOption)
+                {
+                    case 0:
+                        {
+                            target.x -= randomX;
+                            target.y -= randomY;
+                            break;
+                        }
+                    case 1:
+                        {
+                            target.x += randomX;
+                            target.y += randomY;
+                            break;
+                        }
+                    case 2:
+                        {
+                            target.x -= randomX;
+                            target.y += randomY;
+                            break;
+                        }
+                    default:
+                        {
+                            target.x += randomX;
+                            target.y -= randomY;
+                            break;
+                        }
+                }
 
                 Vector3 difference = target - transform.position;
                 float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
