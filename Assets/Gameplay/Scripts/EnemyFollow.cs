@@ -7,7 +7,7 @@ public class EnemyFollow : MonoBehaviour
     public float speed;
     public Transform target;
     public float stoppingDist = 3;
-    bool isFacingRight = false;
+    public bool isFacingRight = false;
     bool prevIsFacingRight = false;
 
     // Start is called before the first frame update

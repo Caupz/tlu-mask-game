@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class BulletBehaviour : MonoBehaviour
 {
-    public Fordon_move player;
     float timeOfDeath;
+    Collider2D collideComponent;
+    Collider2D playerCollision;
 
     void Start()
     {
         timeOfDeath = Time.time + 1f;
+        collideComponent = gameObject.GetComponent<Collider2D>();
+        playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
     }
 
     void Update()
     {
-        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(collideComponent, playerCollision);
 
         if(Time.time > timeOfDeath)
         {
