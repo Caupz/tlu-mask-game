@@ -14,12 +14,15 @@ public class EnemyFollow : MonoBehaviour
 
     float jumpCooldown = 0;
     float prevSec = 0;
+    bool moveUp = false;
+    bool collidedWithOthers = false;
 
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         jumpCooldown = Time.time + jumpRate;
+        moveUp = Random.Range(0, 2) == 1 ? true : false;
     }
 
     void OnSecondUpdate()
@@ -91,11 +94,38 @@ public class EnemyFollow : MonoBehaviour
         
     }
 
+    float prevX = 0;
+    float speedMult = 1f;
+
     void Walk()
     {
         if (Vector2.Distance(transform.position, target.position) > stoppingDist)
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            Vector3 targetPos = new Vector3(target.position.x, target.position.y, target.position.z);
+            
+            if(collidedWithOthers)
+            {
+                collidedWithOthers = false;
+                targetPos.x = prevX;
+                speedMult = 3f;
+
+                if (moveUp)
+                {
+                    Debug.Log("MOVED UP");
+                    targetPos.y += 100.0f;
+                }
+                else
+                {
+                    Debug.Log("MOVED DOWN");
+                    targetPos.y -= 100.0f;
+                }
+            }
+            else
+            {
+                prevX = transform.position.x;
+            }
+            transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * speedMult * Time.deltaTime);
+            speedMult = 1f;
 
             if (transform.position.x > target.position.x)
             {
@@ -120,5 +150,17 @@ public class EnemyFollow : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            // TODO et võtaks playerilt elusid maha.
+        }
+        else if (collision.gameObject.tag == "Enemy")
+        {
+            collidedWithOthers = true;
+        }
     }
 }
