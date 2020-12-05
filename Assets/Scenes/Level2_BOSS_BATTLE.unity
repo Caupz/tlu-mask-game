@@ -640,6 +640,11 @@ PrefabInstance:
       propertyPath: bulletSpeed
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 5073480027237214227, guid: 199a75361de07794ab101e8c7636d0de,
+        type: 3}
+      propertyPath: burstFire
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8148972692331124210, guid: 199a75361de07794ab101e8c7636d0de,
         type: 3}
       propertyPath: m_AnchorMax.x
