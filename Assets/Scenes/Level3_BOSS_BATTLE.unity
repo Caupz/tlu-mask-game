@@ -263,6 +263,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -445.35
       objectReference: {fileID: 0}
+    - target: {fileID: 9013693438383178310, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: burstfire
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013693438383178310, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: burstFireRate
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 9045304807895009797, guid: b350546d6b82c3447b551c13dde976ff,
         type: 3}
       propertyPath: m_Name
