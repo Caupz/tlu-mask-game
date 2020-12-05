@@ -26,7 +26,7 @@ public class EnemyFollow : MonoBehaviour
     {
         jumpCooldown--;
 
-        if (jumpCooldown <= 0)
+        if (jumpCooldown <= 0 && canJump)
         {
             jumpCooldown = Time.time + jumpRate;
             Jump();
