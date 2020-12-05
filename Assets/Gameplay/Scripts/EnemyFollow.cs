@@ -11,11 +11,14 @@ public class EnemyFollow : MonoBehaviour
     bool prevIsFacingRight = false;
     public bool canJump = false;
     public float jumpRate;
+    public float ZigZagChangingInterval = 3f;
 
     float jumpCooldown = 0;
     float prevSec = 0;
     bool moveUp = false;
     bool collidedWithOthers = false;
+    bool ZigZagUp = false;
+    float ZigZagChange;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,7 @@ public class EnemyFollow : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         jumpCooldown = Time.time + jumpRate;
         moveUp = Random.Range(0, 2) == 1 ? true : false;
+        ZigZagChange = ZigZagChangingInterval;
     }
 
     void OnSecondUpdate()
@@ -91,7 +95,13 @@ public class EnemyFollow : MonoBehaviour
             Walk();
         }
 
-        
+        ZigZagChange -= Time.deltaTime;
+
+        if(ZigZagChange <= 0)
+        {
+            ZigZagChange = ZigZagChangingInterval;
+            ZigZagUp = !ZigZagUp;
+        }
     }
 
     float prevX = 0;
@@ -123,6 +133,15 @@ public class EnemyFollow : MonoBehaviour
             else
             {
                 prevX = transform.position.x;
+                
+                if (ZigZagUp)
+                {
+                    targetPos.y += 1f;
+                }
+                else
+                {
+                    targetPos.y -= 1f;
+                }
             }
             transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * speedMult * Time.deltaTime);
             speedMult = 1f;
