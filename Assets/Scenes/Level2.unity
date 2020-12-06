@@ -141,19 +141,19 @@ PrefabInstance:
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
       propertyPath: spawnRate
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
       propertyPath: enemies.Array.data[0]
       value: 
-      objectReference: {fileID: 1428357842012750419, guid: a4c37d4449da6a547ac17a2cd6e8c2f2,
+      objectReference: {fileID: 183184672356506624, guid: 270dd688ba93b8843a44cb5119a8f35c,
         type: 3}
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
       propertyPath: enemies.Array.data[1]
       value: 
-      objectReference: {fileID: 9152065504327910578, guid: ce49642fd9cc3324d8b7b87f3f8fb432,
+      objectReference: {fileID: 600634070391308724, guid: 37b33814daf247248a6b1da77c5b9ca0,
         type: 3}
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
@@ -237,8 +237,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
+      propertyPath: enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
+        type: 3}
       propertyPath: spawnRate
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
@@ -395,6 +400,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
+      propertyPath: enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
+        type: 3}
       propertyPath: delayFirstSpawn
       value: 10
       objectReference: {fileID: 0}
@@ -402,6 +412,11 @@ PrefabInstance:
         type: 3}
       propertyPath: infiniteAmount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
+        type: 3}
+      propertyPath: spawnRate
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7464773698505153886, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
@@ -705,8 +720,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
+      propertyPath: enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
+        type: 3}
       propertyPath: spawnRate
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
@@ -1273,8 +1293,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
+      propertyPath: enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
+        type: 3}
       propertyPath: spawnRate
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
@@ -1422,12 +1447,17 @@ PrefabInstance:
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
       propertyPath: delayFirstSpawn
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
       propertyPath: infiniteAmount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464773698505153885, guid: a8cb772445150a645aec1521752fac47,
+        type: 3}
+      propertyPath: spawnRate
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7464773698505153886, guid: a8cb772445150a645aec1521752fac47,
         type: 3}
