@@ -108,7 +108,7 @@ public class BossBattleScript : MonoBehaviour
 
     void FireBullet(Vector2 direction, float rotationZ)
     {
-        SoundManagerScript.PlaySound("fire");
+        SoundManagerScript.PlaySound("throwHair");
         GameObject b = Instantiate(bulletPrefab) as GameObject;
         Physics2D.IgnoreCollision(b.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         b.transform.position = transform.position;

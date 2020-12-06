@@ -36,7 +36,7 @@ public class BulletBehaviour : MonoBehaviour
             enemy.TakeHit(1f);
         }
 
-        if(collision.gameObject.tag != "Player")
+        if(collision.gameObject.tag == "Enemy")
         {
             Destroy(gameObject);
         }
