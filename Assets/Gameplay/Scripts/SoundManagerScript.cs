@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip characterHitSound, shootSound, enemyDeathSound;
+    public static AudioClip characterHitSound, shootSound, enemyDeathSound, hairThrowSound;
     static AudioSource audioSrc;
 
     void Start()
@@ -12,6 +12,7 @@ public class SoundManagerScript : MonoBehaviour
         characterHitSound = Resources.Load<AudioClip>("Sounds/SFX/PlayerHit");
         shootSound = Resources.Load<AudioClip>("Sounds/SFX/MaskCannonFire");
         enemyDeathSound = Resources.Load<AudioClip>("Sounds/SFX/DeathSound");
+        hairThrowSound = Resources.Load<AudioClip>("Sounds/SFX/AirWoosh");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -33,6 +34,9 @@ public class SoundManagerScript : MonoBehaviour
                 break;
             case "enemyDeath":
                 audioSrc.PlayOneShot(enemyDeathSound);
+                break;
+            case "throwHair":
+                audioSrc.PlayOneShot(hairThrowSound);
                 break;
         }
     }

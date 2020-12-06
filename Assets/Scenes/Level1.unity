@@ -563,6 +563,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 667151345443401306, guid: 258c663e9474941469255b6400c6e7d3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0007019
+      objectReference: {fileID: 0}
+    - target: {fileID: 667151345443401306, guid: 258c663e9474941469255b6400c6e7d3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 893.0014
+      objectReference: {fileID: 0}
+    - target: {fileID: 667151345443401307, guid: 258c663e9474941469255b6400c6e7d3,
+        type: 3}
+      propertyPath: m_text
+      value: An anti-mask protest is taking place. Make them wear masks before it's
+        too late!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 258c663e9474941469255b6400c6e7d3, type: 3}
 --- !u!1001 &1024585689851500675
@@ -1070,6 +1086,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 8043865573866161048, guid: e6263373a26558a49adfb8b188987166,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8043865573866161052, guid: e6263373a26558a49adfb8b188987166,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1185,6 +1206,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 194601815}
+    - target: {fileID: 8043865574760838084, guid: e6263373a26558a49adfb8b188987166,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8043865575407558315, guid: e6263373a26558a49adfb8b188987166,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
