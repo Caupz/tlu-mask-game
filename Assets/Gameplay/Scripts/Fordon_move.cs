@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fordon_move : MonoBehaviour {
 	
@@ -14,13 +15,21 @@ public class Fordon_move : MonoBehaviour {
 	public float energy;
 	public float decreaseSpeed;
 	public float sprintSpeed;
+    public float maxHealth = 100f;
+    public float regenAfterSecs = 3.0f;
+    public float regenRate = 50f;
+    public float enemyNearDamage = 0.15f;
+    float health;
+    public HealthbarBehaviourScript healthBar;
 
-	public bool facingRight = true;
+    public bool facingRight = true;
 	
 	void Start ()
 	{
 		body = GetComponent<Rigidbody2D>();
-	}
+        health = maxHealth;
+        healthBar.SetHealth(health, maxHealth);
+    }
 
 	void Update()
 	{
@@ -49,7 +58,44 @@ public class Fordon_move : MonoBehaviour {
         {
             Flip();
         }
-	}
+
+        if(health < 100f && Time.time > (lastCollison + regenAfterSecs))
+        {
+            RegenHealth();
+        }
+
+        if(health > 0)
+        {
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+            foreach (GameObject enemy in enemies)
+            {
+                if (Vector2.Distance(transform.position, enemy.transform.position) < 1.0f)
+                {
+                    health -= enemyNearDamage;
+                    healthBar.SetHealth(health, maxHealth);
+                    lastCollison = Time.time;
+
+                    if (health < 0)
+                    {
+                        OnPlayerDeath();
+                    }
+                }
+            }
+        }
+    }
+
+    void RegenHealth()
+    {
+        health += (Time.deltaTime * regenRate);
+
+        if(health > maxHealth)
+        {
+            health = maxHealth;
+        }
+
+        healthBar.SetHealth(health, maxHealth);
+    }
 
 	void FixedUpdate()
 	{
@@ -69,5 +115,34 @@ public class Fordon_move : MonoBehaviour {
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    float lastCollison = 0;
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (health > 0 && collision.gameObject.tag == "Enemy")
+        {
+            lastCollison = Time.time;
+            health -= 1.0f;
+            healthBar.SetHealth(health, maxHealth);
+        }
+        else if(health > 0 && collision.gameObject.tag == "EnemyBullet")
+        {
+            lastCollison = Time.time;
+            health -= 4.0f;
+            healthBar.SetHealth(health, maxHealth);
+        }
+
+        if(health < 0)
+        {
+            OnPlayerDeath();
+        }
+    }
+
+    private void OnPlayerDeath()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("OnPlayerDeath");
     }
 }

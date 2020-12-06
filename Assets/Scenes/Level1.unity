@@ -800,6 +800,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1616581555412045319, guid: 60acebeea3231784da492a724eae56a3,
+        type: 3}
+      propertyPath: low.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5727386404247237527, guid: 60acebeea3231784da492a724eae56a3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -859,6 +864,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fordon_Char
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951948603996136832, guid: 60acebeea3231784da492a724eae56a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951948604864340142, guid: 60acebeea3231784da492a724eae56a3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951948604864340142, guid: 60acebeea3231784da492a724eae56a3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60acebeea3231784da492a724eae56a3, type: 3}
