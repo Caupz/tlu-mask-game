@@ -256,7 +256,7 @@ PrefabInstance:
     - target: {fileID: 8414221987539382997, guid: b350546d6b82c3447b551c13dde976ff,
         type: 3}
       propertyPath: m_text
-      value: LEVEL 3 BOSS BATTLE
+      value: DEFEAT THE ALIEN
       objectReference: {fileID: 0}
     - target: {fileID: 9013693438383178308, guid: b350546d6b82c3447b551c13dde976ff,
         type: 3}
