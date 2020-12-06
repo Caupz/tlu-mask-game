@@ -108,11 +108,23 @@ public class PointAndShoot : MonoBehaviour
         }
     }
 
+    void Flip(GameObject b)
+    {
+        Vector3 Scaler = b.transform.localScale;
+        Scaler.x *= -1;
+        b.transform.localScale = Scaler;
+    }
+
     void FireBullet(Vector2 direction, float rotationZ)
     {
         SoundManagerScript.PlaySound("fire");
         GameObject b = Instantiate(bulletPrefab) as GameObject;
         Collider2D[] collideComponents = player.GetComponents<Collider2D>();
+
+        if (player.facingRight)
+        {
+            Flip(b);
+        }
 
         foreach (Collider2D collideComponent in collideComponents)
         {
