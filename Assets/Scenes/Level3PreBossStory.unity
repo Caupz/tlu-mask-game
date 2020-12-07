@@ -306,9 +306,9 @@ PrefabInstance:
     - target: {fileID: 7205587712335419649, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
       propertyPath: m_Text
-      value: "* Alien screams from anger *                 \n\nALIEN: You cannot
+      value: "* The Alien screams with anger *                 \n\nALIEN: You cannot
         stop the spread of this interstellar virus!\nSoon I will return to my homeplanet
-        and bring more of \nthese viruses! There is no escape wretched human!"
+        and bring more of \nthese viruses! There is no escape, wretched human!"
       objectReference: {fileID: 0}
     - target: {fileID: 7205587712419945848, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}

@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1431475988418872019, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1882316544048081972, guid: b350546d6b82c3447b551c13dde976ff,
         type: 3}
       propertyPath: enemyCount
@@ -243,6 +248,51 @@ PrefabInstance:
       propertyPath: delayFirstSpawn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2612189184590848372, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2612189184756470014, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 452623538}
+    - target: {fileID: 2612189184756470014, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DeactivateMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2612189184756470014, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2612189185492849953, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 452623538}
+    - target: {fileID: 2612189185492849953, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2612189185842937590, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 452623538}
+    - target: {fileID: 2612189185842937590, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3131636426855317753, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 452623539}
     - target: {fileID: 3673991007061529796, guid: b350546d6b82c3447b551c13dde976ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -335,6 +385,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b350546d6b82c3447b551c13dde976ff, type: 3}
+--- !u!114 &452623538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3131636426855317753, guid: b350546d6b82c3447b551c13dde976ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 452623537}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aedd7a19647eae5458a3a0fa259419a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &452623539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2612189184057486423, guid: b350546d6b82c3447b551c13dde976ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 452623537}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1668703835
 PrefabInstance:
   m_ObjectHideFlags: 0

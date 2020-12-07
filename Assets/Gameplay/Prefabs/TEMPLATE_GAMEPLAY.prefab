@@ -119,6 +119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fordon_Char
       objectReference: {fileID: 0}
+    - target: {fileID: 7951948603996136832, guid: 60acebeea3231784da492a724eae56a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60acebeea3231784da492a724eae56a3, type: 3}
 --- !u!4 &3673991007061529796 stripped
@@ -792,6 +797,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043865574760838084, guid: e6263373a26558a49adfb8b188987166,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6263373a26558a49adfb8b188987166, type: 3}
@@ -1723,7 +1733,7 @@ PrefabInstance:
     - target: {fileID: 5345275001193010686, guid: 3e4de877b1404c94b863c1684ac8fec7,
         type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7769424
+      value: 1.77866
       objectReference: {fileID: 0}
     - target: {fileID: 5345275001193010687, guid: 3e4de877b1404c94b863c1684ac8fec7,
         type: 3}

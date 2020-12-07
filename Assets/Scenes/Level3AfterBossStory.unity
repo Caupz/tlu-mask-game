@@ -141,8 +141,8 @@ PrefabInstance:
     - target: {fileID: 7205587710455132742, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
       propertyPath: m_Text
-      value: "\"First time in history we can save the human race by lying in front
-        of the T.V. and doing nothing. Lets not screw this up.\"\n\n                            
+      value: "\"For the first time in history we can save the human race by lying
+        in front of the T.V. and doing nothing. Lets not screw this up.\"\n\n                            
         - Some random person from the internet"
       objectReference: {fileID: 0}
     - target: {fileID: 7205587710455132742, guid: 66101b5ab1cc6a04da3679258d548317,
@@ -183,7 +183,7 @@ PrefabInstance:
     - target: {fileID: 7205587710835900327, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
       propertyPath: m_Text
-      value: 'Fordon: Justice shall be done!'
+      value: 'Fordon: Justice for mankind shall be done!'
       objectReference: {fileID: 0}
     - target: {fileID: 7205587710959120621, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
@@ -334,10 +334,10 @@ PrefabInstance:
     - target: {fileID: 7205587712335419649, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
       propertyPath: m_Text
-      value: '* Alien twitches on the ground in front of Fordon and *
+      value: '* The Alien twitches on the ground in front of Fordon *
 
-        is
-        trying to get up but is unable to'
+        trying
+        to get up but is unable to'
       objectReference: {fileID: 0}
     - target: {fileID: 7205587712335419649, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
@@ -360,7 +360,7 @@ PrefabInstance:
       value: '* points mask cannon to the alien and overcharges it  *
 
         Delivering
-        suffecating blast to the alient'
+        suffocating blast to the alient'
       objectReference: {fileID: 0}
     - target: {fileID: 7205587712419945849, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}

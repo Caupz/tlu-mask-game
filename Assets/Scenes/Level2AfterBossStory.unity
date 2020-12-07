@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoryPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 7205587710455132742, guid: 66101b5ab1cc6a04da3679258d548317,
+        type: 3}
+      propertyPath: m_Text
+      value: '* drives to Roswell with his 1971 Plymouth Hemi ''Cuda *'
+      objectReference: {fileID: 0}
     - target: {fileID: 7205587710656023274, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -201,9 +206,15 @@ PrefabInstance:
     - target: {fileID: 7205587710656023275, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
       propertyPath: m_Text
-      value: 'Mr. President: Yes thank you, Fordon. Unfortunatly I was mindcontrolled
-        by the alien. It broke out from the area 69 and is trying to get to it''s
-        spaceship! Before you leave, take this burst-fire module for your weapon.'
+      value: 'Mr. President: Yes, thank you Fordon. I was being mind controlled by
+        the alien! It broke out from area 69 and is trying to get to it''s spaceship!
+        Before you leave, take this burst-fire module for your weapon.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205587710835900327, guid: 66101b5ab1cc6a04da3679258d548317,
+        type: 3}
+      propertyPath: m_Text
+      value: "Fordon: Had enough?!\n        * Weird noises eminate from the president
+        *"
       objectReference: {fileID: 0}
     - target: {fileID: 7205587710959120621, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
@@ -248,9 +259,9 @@ PrefabInstance:
     - target: {fileID: 7205587712335419649, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
       propertyPath: m_Text
-      value: "* Alien pushes itself out of the president's mouth *   \n\nALIEN: Wretched
-        little human! Soon I will \nconsume the living and the dead!\n\n* alien rans
-        off in supernatural speed *         "
+      value: "* An Alien pushes itself out of the president's mouth *   \n\nALIEN:
+        Wretched little human! Soon I will \nconsume the living and the dead!\n\n*
+        The alien rans off with supernatural speed *         "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66101b5ab1cc6a04da3679258d548317, type: 3}
