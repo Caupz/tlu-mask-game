@@ -219,6 +219,11 @@ PrefabInstance:
       propertyPath: orthographic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 40658432144596687, guid: 258c663e9474941469255b6400c6e7d3,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1bdd286ca8c31264fa2870b0d8bec919, type: 3}
     - target: {fileID: 667151345443401307, guid: 258c663e9474941469255b6400c6e7d3,
         type: 3}
       propertyPath: m_text

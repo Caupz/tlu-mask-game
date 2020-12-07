@@ -308,6 +308,11 @@ PrefabInstance:
       propertyPath: m_text
       value: DEFEAT THE ALIEN
       objectReference: {fileID: 0}
+    - target: {fileID: 9013693438383178305, guid: b350546d6b82c3447b551c13dde976ff,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1bdd286ca8c31264fa2870b0d8bec919, type: 3}
     - target: {fileID: 9013693438383178308, guid: b350546d6b82c3447b551c13dde976ff,
         type: 3}
       propertyPath: m_LocalPosition.x

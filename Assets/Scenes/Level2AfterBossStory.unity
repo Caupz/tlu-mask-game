@@ -191,7 +191,7 @@ PrefabInstance:
     - target: {fileID: 7205587710455132742, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
       propertyPath: m_Text
-      value: '* drives to Roswell with his 1971 Plymouth Hemi ''Cuda *'
+      value: '* drives to Roswell in his 1971 Plymouth Hemi ''Cuda *'
       objectReference: {fileID: 0}
     - target: {fileID: 7205587710656023274, guid: 66101b5ab1cc6a04da3679258d548317,
         type: 3}
@@ -261,7 +261,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: "* An Alien pushes itself out of the president's mouth *   \n\nALIEN:
         Wretched little human! Soon I will \nconsume the living and the dead!\n\n*
-        The alien rans off with supernatural speed *         "
+        The alien runs off with supernatural speed *         "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66101b5ab1cc6a04da3679258d548317, type: 3}
