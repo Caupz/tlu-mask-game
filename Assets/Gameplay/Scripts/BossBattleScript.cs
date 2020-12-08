@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossBattleScript : MonoBehaviour
 {
+    public Animator animator;
     public float bulletSpeed = 20f;
     public bool burstFire = false;
     public float projectileRate = 3f;
@@ -30,6 +31,14 @@ public class BossBattleScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerCollision = player.GetComponent<Collider2D>();
     }
+
+    void SetAttacking(bool isAttacking)
+    {
+        if(animator != null)
+        {
+            animator.SetBool("Attacking", isAttacking);
+        }
+    }
     
     void Update()
     {
@@ -40,17 +49,24 @@ public class BossBattleScript : MonoBehaviour
                 previousSecond = Time.time + burstFireRate;
                 nextProjectile = 0;
                 burstCountLeft--;
+                SetAttacking(true);
 
-                if(burstCountLeft <= 0)
+                if (burstCountLeft <= 0)
                 {
                     burstCountLeft = burstCount;
                     previousSecond = Time.time + 1;
+                    SetAttacking(false);
                 }
             }
             else
             {
                 nextProjectile--;
                 previousSecond = Time.time + 1;
+
+                if(nextProjectile <= 0)
+                {
+                    SetAttacking(true);
+                }
             }
 
             if(nextProjectile <= 0)

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour
 {
+    public Animator animator;
     public float speed;
     public Transform target;
     public float stoppingDist = 3;
@@ -29,6 +30,14 @@ public class EnemyFollow : MonoBehaviour
         ZigZagChange = ZigZagChangingInterval;
     }
 
+    void SetJumping(bool isJumping)
+    {
+        if (animator != null)
+        {
+            animator.SetBool("Jumping", isJumping);
+        }
+    }
+
     void OnSecondUpdate()
     {
         jumpCooldown--;
@@ -47,6 +56,7 @@ public class EnemyFollow : MonoBehaviour
     {
         jumping = true;
         jumpingDuration = 0.5f;
+        SetJumping(true);
     }
 
     void ProcessJumping(Vector3 pos)
@@ -74,6 +84,7 @@ public class EnemyFollow : MonoBehaviour
         if (jumpingDuration <= 0)
         {
             jumping = false;
+            SetJumping(false);
         }
     }
 
