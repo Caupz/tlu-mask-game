@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Fordon_move : MonoBehaviour {
-	
+    public Animator animator;
 	Rigidbody2D body;
 
 	float horizontal;
@@ -48,7 +48,6 @@ public class Fordon_move : MonoBehaviour {
 		} else {
 			walkSpeed = 5.0f;
 		}
-
 		
 		if(facingRight == false && horizontal > 0)
         {
@@ -104,10 +103,14 @@ public class Fordon_move : MonoBehaviour {
 			// limit movement speed diagonally, so you move at 70% speed
 			horizontal *= moveLimiter;
 			vertical *= moveLimiter;
-		} 
+		}
 
-		body.velocity = new Vector2(horizontal * walkSpeed, vertical * walkSpeed);
-	}
+        float speed = horizontal * walkSpeed;
+        float vspeed = vertical * walkSpeed;
+        float totalSpeed = Mathf.Abs(speed + vspeed);
+		body.velocity = new Vector2(speed, vspeed);
+        animator.SetFloat("Speed", totalSpeed);
+    }
     
 	void Flip()
     {
