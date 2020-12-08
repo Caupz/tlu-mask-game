@@ -94,9 +94,9 @@ GameObject:
   - component: {fileID: 5727386404247237525}
   - component: {fileID: 5727386404247237610}
   - component: {fileID: 5727386404247237611}
-  - component: {fileID: 5727386404247237526}
   - component: {fileID: 7887066375374728002}
   - component: {fileID: -3660875012704328416}
+  - component: {fileID: 8413550481450303128}
   m_Layer: 5
   m_Name: Fordon_Char
   m_TagString: Player
@@ -240,7 +240,43 @@ MonoBehaviour:
   enemyNearDamage: 0.15
   healthBar: {fileID: 7951948603996136959}
   facingRight: 1
---- !u!82 &5727386404247237526
+  isMoving: 0
+--- !u!95 &7887066375374728002
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5727386404247237608}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3dd6fad6501d91446ae1ebe7443cbccd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &-3660875012704328416
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5727386404247237608}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.62}
+  m_Size: {x: 0.4, y: 1.15}
+  m_Direction: 0
+--- !u!82 &8413550481450303128
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -250,11 +286,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: edfae6e4a0ecbe14bb7644005b3e8176, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cae1a063241418f4497ce26245aa4be7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1.5
-  Loop: 0
+  m_Pitch: 1
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -336,41 +372,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &7887066375374728002
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5727386404247237608}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3dd6fad6501d91446ae1ebe7443cbccd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &-3660875012704328416
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5727386404247237608}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.62}
-  m_Size: {x: 0.4, y: 1.15}
-  m_Direction: 0
 --- !u!1001 &6227066998314588305
 PrefabInstance:
   m_ObjectHideFlags: 0

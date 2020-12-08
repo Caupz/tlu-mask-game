@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class Fordon_move : MonoBehaviour {
     public Animator animator;
 	Rigidbody2D body;
+    AudioSource audioSrc;
 
-	float horizontal;
+    float horizontal;
 	float vertical;
 	float moveLimiter = 0.7f;
 
@@ -23,12 +24,14 @@ public class Fordon_move : MonoBehaviour {
     public HealthbarBehaviourScript healthBar;
 
     public bool facingRight = true;
+    public bool isMoving = false;
 	
 	void Start ()
 	{
 		body = GetComponent<Rigidbody2D>();
         health = maxHealth;
         healthBar.SetHealth(health, maxHealth);
+        audioSrc = GetComponent<AudioSource>();
     }
 
 	void Update()
@@ -82,6 +85,21 @@ public class Fordon_move : MonoBehaviour {
                 }
             }
         }
+
+        if (body.velocity.x != 0 || body.velocity.y != 0) 
+        {
+            isMoving = true;
+        }
+        else
+            isMoving = false;
+
+        if (isMoving)
+        {
+            if (!audioSrc.isPlaying)
+                audioSrc.Play();
+        }
+        else
+            audioSrc.Stop();
     }
 
     void RegenHealth()
@@ -110,6 +128,7 @@ public class Fordon_move : MonoBehaviour {
         float totalSpeed = Mathf.Abs(speed + vspeed);
 		body.velocity = new Vector2(speed, vspeed);
         animator.SetFloat("Speed", totalSpeed);
+
     }
     
 	void Flip()
