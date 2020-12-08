@@ -11,6 +11,8 @@ public class BossBattleScript : MonoBehaviour
     public float burstCount = 3;
     public GameObject bulletPrefab;
     public float burstFireRate = 0.2f;
+    public EnemyHealth healthComponent;
+    public bool enableFullautomaticAtLowHp = false;
 
     float burstCountLeft = 0;
     float nextProjectile = 0;
@@ -28,6 +30,7 @@ public class BossBattleScript : MonoBehaviour
         nextProjectile = projectileRate;
         previousSecond = Time.time + 1;
         enemyFollow = gameObject.GetComponent<EnemyFollow>();
+        healthComponent = gameObject.GetComponent<EnemyHealth>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerCollision = player.GetComponent<Collider2D>();
     }
@@ -44,6 +47,16 @@ public class BossBattleScript : MonoBehaviour
     {
         if(Time.time > previousSecond)
         {
+            if(enableFullautomaticAtLowHp)
+            {
+                float halfHealthPercent = healthComponent.maxhp / 2;
+                if (halfHealthPercent > healthComponent.hp)
+                {
+                    burstCount = 30f;
+                    bulletSpeed = 80f;
+                }
+            }
+
             if(burstFire)
             {
                 previousSecond = Time.time + burstFireRate;

@@ -496,6 +496,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2411295419620956816, guid: 2e1f6c84694886d498c686545f6d479a,
     type: 3}
   burstFireRate: 0.1
+  healthComponent: {fileID: 0}
+  enableFullautomaticAtLowHp: 1
   randomX: 0
   randomY: 0
 --- !u!50 &7449807367531492780
