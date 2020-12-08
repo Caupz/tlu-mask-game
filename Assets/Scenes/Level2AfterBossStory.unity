@@ -121,163 +121,72 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1104478034745709417
+--- !u!1001 &1181540468683798226
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1104478034629532280, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361419, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 440.75787
       objectReference: {fileID: 0}
-    - target: {fileID: 1104478034629532280, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361419, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 228.69536
       objectReference: {fileID: 0}
-    - target: {fileID: 1104478034629532280, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361419, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -181.09045
       objectReference: {fileID: 0}
-    - target: {fileID: 1104478034629532280, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361419, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1104478034629532280, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361419, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1104478034629532280, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361419, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1104478034629532280, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361419, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1104478034629532280, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361419, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1104478034629532280, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361419, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1104478034629532280, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361419, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1104478034629532280, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361419, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1104478034629532281, guid: 66101b5ab1cc6a04da3679258d548317,
+    - target: {fileID: 8991766478285361460, guid: f85b074b3160f2e4593d72c87e3643cb,
         type: 3}
       propertyPath: m_Name
-      value: StoryPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710455132742, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_Text
-      value: '* drives to Roswell in his 1971 Plymouth Hemi ''Cuda *'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710656023274, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -6.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710656023274, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 625.2477
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710656023275, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_Text
-      value: 'Mr. President: Yes, thank you Fordon. I was being mind controlled by
-        the alien! It broke out from area 69 and is trying to get to it''s spaceship!
-        Before you leave, take this burst-fire module for your weapon.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710835900327, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_Text
-      value: "Fordon: Had enough?!\n        * Weird noises eminate from the president
-        *"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710959120621, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710959120621, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710959120621, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710959120621, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710959120621, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710959120621, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710959120621, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587710959120621, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587711229960411, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 144
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587711229960411, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 343
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205587711229960412, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f69a339b1153bf54f80b01c22158bbdd,
-        type: 3}
-    - target: {fileID: 7205587712335419649, guid: 66101b5ab1cc6a04da3679258d548317,
-        type: 3}
-      propertyPath: m_Text
-      value: "* An Alien pushes itself out of the president's mouth *   \n\nALIEN:
-        Wretched little human! Soon I will \nconsume the living and the dead!\n\n*
-        The alien runs off with supernatural speed *         "
+      value: PresidentStoryPanel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 66101b5ab1cc6a04da3679258d548317, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: f85b074b3160f2e4593d72c87e3643cb, type: 3}
