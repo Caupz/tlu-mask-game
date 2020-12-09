@@ -23,7 +23,7 @@ public class EnemyBulletBehaviour : MonoBehaviour
 
         if (Time.time > timeOfDeath)
         {
-            Debug.Log("Vaenlase kuuli aeg sai otsa");
+            //Debug.Log("Vaenlase kuuli aeg sai otsa");
             Destroy(gameObject);
         }
     }
@@ -33,7 +33,7 @@ public class EnemyBulletBehaviour : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             // TODO et võtaks playerilt elusid maha.
-            Debug.Log("Tabas mängijat");
+            //Debug.Log("Tabas mängijat");
             Destroy(gameObject);
         }
     }

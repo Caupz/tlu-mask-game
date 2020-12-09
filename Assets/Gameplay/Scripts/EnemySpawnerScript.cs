@@ -86,18 +86,18 @@ public class EnemySpawnerScript : MonoBehaviour
 
                 if(scriptObj != null && scriptObj.enemyCount > 0)
                 {
-                    Debug.Log("ScriptObj: " + scriptObj.enemyCount);
+                    //Debug.Log("ScriptObj: " + scriptObj.enemyCount);
                     return false;
                 }
             }
             else if (gameObject.tag == "Enemy")
             {
-                Debug.Log("There is obj with Enemy tag");
+                //Debug.Log("There is obj with Enemy tag");
                 return false;
             }
         }
 
-        Debug.Log("ALL ENEMIES KILLED");
+        //Debug.Log("ALL ENEMIES KILLED");
         return true;
     }
 

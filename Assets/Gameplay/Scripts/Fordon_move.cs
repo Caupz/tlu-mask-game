@@ -165,6 +165,6 @@ public class Fordon_move : MonoBehaviour {
     private void OnPlayerDeath()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Debug.Log("OnPlayerDeath");
+        //Debug.Log("OnPlayerDeath");
     }
 }
