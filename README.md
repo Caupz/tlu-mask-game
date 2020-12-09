@@ -4,7 +4,7 @@
   
 The game is made for Tallinn University's course Computer Games.  
 Game engine: Unity
-Play game at: http://caupo.ee/tlu/MSG/
+Play game at: http://caupo.ee/tlu/MSG/  
 Trailer: https://youtu.be/TG2B5-aM80A  
   
 ## Story  
